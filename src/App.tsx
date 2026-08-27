@@ -1,6 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { PageView, Room, SpaService, Facility, GalleryItem, Testimonial, WebsiteSettings } from './types.js';
 import { api } from './services/api.js';
+import {
+  initialSettings,
+  initialRooms,
+  initialServices,
+  initialFacilities,
+  initialGallery,
+  initialTestimonials,
+} from './data/initialData.js';
 
 // Components
 import { Navbar } from './components/Navbar.js';
@@ -22,35 +30,12 @@ export function App() {
   const [loading, setLoading] = useState<boolean>(true);
 
   // Dynamic Data State
-  const [settings, setSettings] = useState<WebsiteSettings>({
-    businessName: 'BAHAR RETREAT AND SPA',
-    businessNameHindi: 'बाहर रिट्रीट एंड स्पा',
-    tagline: 'A Serene Mountain & Forest Wellness Sanctuary',
-    taglineHindi: 'प्रकृति की गोद में शांति और संपूर्ण कायाकल्प',
-    logoUrl: 'https://lh3.googleusercontent.com/d/1zci6HGTHjB_RbnE3XzedqpIyqZJCGTFC',
-    phone: '+91 9854936290',
-    secondaryPhone: '',
-    whatsappNumber: '+91 9854936920',
-    email: 'stay@baharretreat.com',
-    address: 'Development Area,Near Pushpa Garage,Gangtok,Sikkim,India- 737101',
-    addressHindi: 'डेवलपमेंट एरिया, पुष्पा गैराज के पास, गंगटोक, सिक्किम, भारत - 737101',
-    googleMapsUrl: 'https://maps.google.com/?q=Development+Area+Near+Pushpa+Garage+Gangtok+Sikkim+India+737101',
-    checkInTime: '14:00',
-    checkOutTime: '11:00',
-    currency: 'INR',
-    currencySymbol: '₹',
-    seoTitle: 'Bahar Retreat And Spa | Luxury Resort & Ayurvedic Wellness',
-    seoDescription: 'Experience nature-immersed luxury cottages, authentic Ayurvedic therapies, organic gastronomy, and serene mountain vistas at Bahar Retreat And Spa.',
-    facebookUrl: 'https://facebook.com',
-    instagramUrl: 'https://instagram.com',
-    youtubeUrl: 'https://youtube.com',
-  });
-
-  const [rooms, setRooms] = useState<Room[]>([]);
-  const [services, setServices] = useState<SpaService[]>([]);
-  const [facilities, setFacilities] = useState<Facility[]>([]);
-  const [gallery, setGallery] = useState<GalleryItem[]>([]);
-  const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
+  const [settings, setSettings] = useState<WebsiteSettings>(initialSettings);
+  const [rooms, setRooms] = useState<Room[]>(initialRooms);
+  const [services, setServices] = useState<SpaService[]>(initialServices);
+  const [facilities, setFacilities] = useState<Facility[]>(initialFacilities);
+  const [gallery, setGallery] = useState<GalleryItem[]>(initialGallery);
+  const [testimonials, setTestimonials] = useState<Testimonial[]>(initialTestimonials);
 
   // Booking Modal State
   const [isBookingOpen, setIsBookingOpen] = useState(false);
