@@ -1,0 +1,28 @@
+# Netlify Configuration for Bahar Retreat And Spa
+
+[build]
+  # Build command for Vite frontend
+  command = "npm run build"
+  # Directory where compiled static assets are located
+  publish = "dist"
+
+# Single Page Application (SPA) redirect rule
+# Routes all client-side navigation paths to index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Security & Optimization Headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "no-referrer-when-downgrade"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
