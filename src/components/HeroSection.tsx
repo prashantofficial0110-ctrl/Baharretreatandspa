@@ -35,7 +35,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
   const handleWhatsAppChat = () => {
     const cleanPhone = (settings.whatsappNumber || '+919876543210').replace(/[^0-9]/g, '');
-    const msg = encodeURIComponent(`Hello Bahar Retreat And Spa (बाहर रिट्रीट एंड स्पा), I would like to enquire about room availability for ${checkIn} to ${checkOut}.`);
+    const msg = encodeURIComponent(`Hello Bahar Retreat, I would like to enquire about room availability for ${checkIn} to ${checkOut}.`);
     window.open(`https://wa.me/${cleanPhone}?text=${msg}`, '_blank', 'noopener,noreferrer');
   };
 
@@ -46,7 +46,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       <div className="absolute inset-0 z-0">
         <img
           src="https://lh3.googleusercontent.com/d/10Eep-UI_w78O_OC1PhZEtdzME77m6bjY"
-          alt="Bahar Retreat And Spa lush nature resort landscape"
+          alt="Bahar Retreat lush nature resort landscape"
           className="w-full h-full object-cover object-center transform scale-105 transition duration-1000"
           referrerPolicy="no-referrer"
           onError={(e) => {
@@ -64,17 +64,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         {/* Brand Tagline Eyebrow Badge */}
         <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-[#40916C] text-white text-[11px] uppercase font-bold tracking-[0.25em] mb-4 shadow-sm animate-fadeIn">
           <Sparkles className="w-3.5 h-3.5" />
-          <span>{settings.taglineHindi || 'प्रकृति, शांति और आयुर्वेदिक विश्राम का अनुपम संगम'}</span>
+          <span>Luxury Nature & Wellness Retreat</span>
         </div>
 
-        {/* Heading in English & Hindi */}
+        {/* Heading in English */}
         <div className="max-w-4xl space-y-2 mb-6">
           <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.02] drop-shadow-md">
-            {settings.businessName || 'BAHAR RETREAT & SPA'}
+            {settings.businessName || 'BAHAR RETREAT'}
           </h1>
-          <p className="font-serif text-2xl sm:text-3xl lg:text-4xl text-[#D8F3DC] font-medium tracking-wide">
-            {settings.businessNameHindi || 'बाहर रिट्रीट एंड स्पा'}
-          </p>
           <p className="text-base sm:text-lg lg:text-xl text-white/90 font-light max-w-2xl pt-2 leading-relaxed">
             {settings.tagline || 'A Serene Sanctuary of Luxury, Wellness & Untamed Nature. Awaken to birdsong, breathe pristine mountain air, and restore your senses with authentic Ayurvedic healing.'}
           </p>

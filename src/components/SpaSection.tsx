@@ -34,8 +34,8 @@ export const SpaSection: React.FC<SpaSectionProps> = ({
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1B4332]">
             Bahar Ayurvedic Spa & Rejuvenation
           </h2>
-          <p className="font-serif text-xl sm:text-2xl text-[#40916C] font-medium">
-            आयुर्वेदिक उपचार एवं संपूर्ण कायाकल्प
+          <p className="text-sm sm:text-base text-[#40916C] font-semibold uppercase tracking-wider">
+            Ayurvedic Therapies & Complete Mind-Body Renewal
           </p>
           <p className="text-base text-[#1B4332]/75 max-w-2xl mx-auto pt-2">
             Ancient therapeutic wisdom combined with pure botanical oils, warm herbal compresses, and meditative stillness.
@@ -93,11 +93,6 @@ export const SpaSection: React.FC<SpaSectionProps> = ({
                       {service.name}
                     </h3>
                   </div>
-                  {service.hindiName && (
-                    <p className="text-xs font-semibold text-[#40916C] mb-2">
-                      {service.hindiName}
-                    </p>
-                  )}
                   <p className="text-xs sm:text-sm text-[#1B4332]/75 leading-relaxed">
                     {service.description}
                   </p>

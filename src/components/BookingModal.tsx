@@ -147,7 +147,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
     if (!confirmationData) return;
     const cleanPhone = (settings.whatsappNumber || '+919876543210').replace(/[^0-9]/g, '');
     const text = encodeURIComponent(
-      `Hello Bahar Retreat And Spa (बाहर रिट्रीट एंड स्पा),\n\nI have submitted a booking request on your website.\n\n` +
+      `Hello Bahar Retreat,\n\nI have submitted a booking request on your website.\n\n` +
       `• Booking Ref: ${confirmationData.bookingRef}\n` +
       `• Guest Name: ${confirmationData.guestName}\n` +
       `• Check-In: ${confirmationData.checkInDate}\n` +
@@ -180,7 +180,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
             <div className="w-14 h-14 rounded-full bg-white border border-[#52B788]/40 p-1 shadow-md overflow-hidden shrink-0 hidden sm:flex items-center justify-center">
               <img
                 src={settings.logoUrl || 'https://lh3.googleusercontent.com/d/1zci6HGTHjB_RbnE3XzedqpIyqZJCGTFC'}
-                alt="Bahar Retreat And Spa Logo"
+                alt="Bahar Retreat Logo"
                 className="w-full h-full object-contain"
                 referrerPolicy="no-referrer"
                 onError={(e) => {
@@ -198,8 +198,8 @@ export const BookingModal: React.FC<BookingModalProps> = ({
               </h3>
               <p className="text-xs sm:text-sm text-[#D8F3DC]/85">
                 {confirmationData
-                  ? 'बाहर रिट्रीट एंड स्पा में आपकी बुकिंग का अनुरोध सफलतापूर्वक दर्ज किया गया है।'
-                  : 'Bahar Retreat And Spa (बाहर रिट्रीट एंड स्पा) • Best Direct Rate Guaranteed'}
+                  ? 'Your booking reservation request has been successfully recorded.'
+                  : 'Bahar Retreat • Best Direct Rate Guaranteed'}
               </p>
             </div>
           </div>

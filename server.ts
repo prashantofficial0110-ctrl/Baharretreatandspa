@@ -98,7 +98,7 @@ async function startServer() {
   }
 
   app.listen(PORT, '0.0.0.0', () => {
-    console.log(`Bahar Retreat and Spa server running on port ${PORT}`);
+    console.log(`Bahar Retreat server running on port ${PORT}`);
   });
 }
 

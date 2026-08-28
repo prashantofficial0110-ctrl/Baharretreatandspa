@@ -17,25 +17,21 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
     {
       icon: Trees,
       title: 'Secluded Nature Immersion',
-      hindi: 'प्राकृतिक वातावरण',
       desc: 'Sprawling hectares of lush greenery, ancient forest canopies, and bird sanctuaries far removed from bustling city noise.',
     },
     {
       icon: Leaf,
       title: 'Authentic Ayurvedic Healing',
-      hindi: 'आयुर्वेदिक चिकित्सा',
       desc: 'Holistic wellness treatments, natural herbs, pure cold-pressed oils, and personalized restorative rituals guided by skilled therapists.',
     },
     {
       icon: HeartHandshake,
-      title: 'Bespoke Indian Hospitality',
-      hindi: 'अतिथि देवो भव:',
+      title: 'Bespoke Hospitality',
       desc: 'Thoughtful, discreet, and warm service tailored to every guest’s unique relaxation needs and personal wellness goals.',
     },
     {
       icon: Waves,
       title: 'Organic Farm-To-Table Dining',
-      hindi: 'शुद्ध जैविक आहार',
       desc: 'Seasonal gourmet meals crafted with ingredients freshly harvested from nearby orchards and organic local farms.',
     },
   ];
@@ -56,10 +52,10 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
             <span>Discover The Sanctuary</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1B4332]">
-            About Bahar Retreat And Spa
+            About Bahar Retreat
           </h2>
-          <p className="font-serif text-xl sm:text-2xl text-[#40916C] font-medium">
-            बाहर रिट्रीट एंड स्पा का परिचय एवं दर्शन
+          <p className="text-sm sm:text-base text-[#40916C] font-semibold uppercase tracking-wider">
+            Our Vision, Heritage & Natural Sanctuary
           </p>
           <div className="w-16 h-0.5 bg-[#40916C] mx-auto mt-4" />
         </div>
@@ -72,7 +68,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
             <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-[#1B4332]">
               <img
                 src="https://lh3.googleusercontent.com/d/1EetXxIQBXd3M0kytBfq34JkA8zysfCm-"
-                alt="Bahar Retreat And Spa Property Sanctuary"
+                alt="Bahar Retreat Property Sanctuary"
                 className="w-full h-[380px] sm:h-[440px] object-cover hover:scale-105 transition duration-700"
                 referrerPolicy="no-referrer"
                 onError={(e) => {
@@ -102,7 +98,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
             </h3>
             
             <p className="text-base sm:text-lg text-[#1B4332]/85 leading-relaxed font-normal">
-              Nestled harmoniously amidst unspoiled natural landscapes, <strong>Bahar Retreat And Spa (बाहर रिट्रीट एंड स्पा)</strong> is designed as a peaceful haven for travelers seeking deep relaxation, rejuvenation, and holistic wellbeing.
+              Nestled harmoniously amidst unspoiled natural landscapes, <strong>Bahar Retreat</strong> is designed as a peaceful haven for travelers seeking deep relaxation, rejuvenation, and holistic wellbeing.
             </p>
 
             <p className="text-base text-[#1B4332]/80 leading-relaxed font-normal">
@@ -144,12 +140,9 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
                 <div className="w-12 h-12 rounded-full bg-[#F1F8E9] group-hover:bg-[#1B4332] text-[#40916C] group-hover:text-[#D8F3DC] transition flex items-center justify-center mb-4">
                   <Icon className="w-6 h-6" />
                 </div>
-                <h4 className="font-serif text-xl font-bold text-[#1B4332] mb-1">
+                <h4 className="font-serif text-xl font-bold text-[#1B4332] mb-2">
                   {v.title}
                 </h4>
-                <span className="block text-xs font-semibold text-[#40916C] mb-2">
-                  {v.hindi}
-                </span>
                 <p className="text-sm text-[#1B4332]/75 leading-relaxed">
                   {v.desc}
                 </p>

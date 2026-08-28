@@ -60,7 +60,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ settings }) => {
 
   const handleWhatsApp = () => {
     const cleanPhone = (settings.whatsappNumber || '+919876543210').replace(/[^0-9]/g, '');
-    const msg = encodeURIComponent(`Hello Bahar Retreat And Spa (बाहर रिट्रीट एंड स्पा), I would like to get in touch regarding a general enquiry.`);
+    const msg = encodeURIComponent(`Hello Bahar Retreat, I would like to get in touch regarding a general enquiry.`);
     window.open(`https://wa.me/${cleanPhone}?text=${msg}`, '_blank', 'noopener,noreferrer');
   };
 
@@ -75,10 +75,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ settings }) => {
             <span>Concierge & Inquiries</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1B4332]">
-            Contact Bahar Retreat And Spa
+            Contact Bahar Retreat
           </h2>
-          <p className="font-serif text-xl sm:text-2xl text-[#40916C] font-medium">
-            संपर्क एवं मार्ग दर्शन
+          <p className="text-sm sm:text-base text-[#40916C] font-semibold uppercase tracking-wider">
+            Location, Directions & Direct Support
           </p>
           <p className="text-base text-[#1B4332]/75 max-w-2xl mx-auto pt-2">
             Reach out to our front desk team for room bookings, customized wellness itineraries, route assistance, or dining reservations.
@@ -175,11 +175,6 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ settings }) => {
                     <p className="text-sm text-white/90 font-medium leading-relaxed">
                       {settings.address || 'Development Area,Near Pushpa Garage,Gangtok,Sikkim,India- 737101'}
                     </p>
-                    {settings.addressHindi && (
-                      <p className="text-xs text-[#D8F3DC]/80 mt-1">
-                        {settings.addressHindi}
-                      </p>
-                    )}
                   </div>
                 </div>
 
@@ -208,7 +203,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ settings }) => {
             <div className="bg-white rounded-3xl overflow-hidden shadow-sm border border-[#1B4332]/10 p-2">
               <div className="h-56 sm:h-64 rounded-2xl overflow-hidden relative bg-[#F1F8E9]">
                 <iframe
-                  title="Bahar Retreat And Spa Google Map"
+                  title="Bahar Retreat Google Map"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110000!2d78.0!3d30.3!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDE4JzAwLjAiTiA3OMKwMDAnMDAuMCJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
                   width="100%"
                   height="100%"
@@ -222,7 +217,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ settings }) => {
                   <span>Google Maps Location</span>
                 </span>
                 <a
-                  href={settings.googleMapsUrl || 'https://maps.google.com/?q=Bahar+Retreat+And+Spa'}
+                  href={settings.googleMapsUrl || 'https://maps.google.com/?q=Bahar+Retreat'}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xs font-bold text-[#40916C] hover:text-[#1B4332] underline"
@@ -252,7 +247,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ settings }) => {
                   Enquiry Submitted Successfully!
                 </h4>
                 <p className="text-sm text-[#1B4332]/80 max-w-md mx-auto leading-relaxed">
-                  Thank you for reaching out to <strong>Bahar Retreat And Spa (बाहर रिट्रीट एंड स्पा)</strong>. A representative from our hospitality desk will contact you shortly.
+                  Thank you for reaching out to <strong>Bahar Retreat</strong>. A representative from our hospitality desk will contact you shortly.
                 </p>
                 <div className="pt-2 flex justify-center space-x-3">
                   <button

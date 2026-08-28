@@ -1,6 +1,6 @@
 {
-  "name": "Bahar Retreat And Spa",
-  "description": "Official website and booking management portal for Bahar Retreat And Spa (बाहर रिट्रीट एंड स्पा) featuring luxury accommodations, wellness spa services, dynamic gallery, and secure admin management.",
+  "name": "Bahar Retreat",
+  "description": "Official website and booking management portal for Bahar Retreat featuring luxury accommodations, wellness spa services, dynamic gallery, and secure admin management.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

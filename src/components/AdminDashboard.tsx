@@ -377,8 +377,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
         </head>
         <body>
           <div class="header">
-            <h1 class="title">BAHAR RETREAT AND SPA</h1>
-            <div class="subtitle">बाहर रिट्रीट एंड स्पा • Guest Reservation Folio</div>
+            <h1 class="title">BAHAR RETREAT</h1>
+            <div class="subtitle">Luxury Wellness Sanctuary • Guest Reservation Folio</div>
             <div class="ref">${booking.bookingRef}</div>
           </div>
           <div class="grid">
@@ -411,7 +411,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
           ` : ''}
           <div class="total">Total Estimated Amount: ₹${(booking.totalAmount || 0).toLocaleString()}</div>
           <div class="footer">
-            Bahar Retreat And Spa • Development Area, Near Pushpa Garage, Gangtok, Sikkim - 737101 • Phone: +91 98765 43210 • stay@baharretreat.com
+            Bahar Retreat • Development Area, Near Pushpa Garage, Gangtok, Sikkim - 737101 • Phone: +91 98765 43210 • stay@baharretreat.com
           </div>
           <script>
             window.onload = function() { window.print(); }
@@ -423,7 +423,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
   };
 
   const handleSendWhatsAppConfirmation = (booking: Booking) => {
-    const text = `Namaste ${booking.guestName} ji, greetings from Bahar Retreat And Spa! 🌿✨\n\nYour reservation details are confirmed as follows:\n- Booking Ref: ${booking.bookingRef}\n- Accommodation: ${booking.roomName}\n- Check-In: ${booking.checkInDate} (From 14:00)\n- Check-Out: ${booking.checkOutDate} (Till 11:00)\n- Total Guests: ${booking.adults} Adults${booking.children ? `, ${booking.children} Children` : ''}\n- Estimated Amount: ₹${(booking.totalAmount || 0).toLocaleString()}\n\nOur concierge is delighted to welcome you to our mountain sanctuary. Please let us know if you have any special meal or arrival preferences!`;
+    const text = `Namaste ${booking.guestName} ji, greetings from Bahar Retreat! 🌿✨\n\nYour reservation details are confirmed as follows:\n- Booking Ref: ${booking.bookingRef}\n- Accommodation: ${booking.roomName}\n- Check-In: ${booking.checkInDate} (From 14:00)\n- Check-Out: ${booking.checkOutDate} (Till 11:00)\n- Total Guests: ${booking.adults} Adults${booking.children ? `, ${booking.children} Children` : ''}\n- Estimated Amount: ₹${(booking.totalAmount || 0).toLocaleString()}\n\nOur concierge is delighted to welcome you to our mountain sanctuary. Please let us know if you have any special meal or arrival preferences!`;
     const cleanPhone = booking.guestPhone.replace(/[^0-9]/g, '');
     const url = `https://wa.me/${cleanPhone}?text=${encodeURIComponent(text)}`;
     window.open(url, '_blank');
@@ -634,7 +634,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             <div className="w-20 h-20 rounded-2xl bg-white flex items-center justify-center mx-auto shadow-lg border border-[#D8F3DC] p-2 overflow-hidden">
               <img
                 src="https://lh3.googleusercontent.com/d/1zci6HGTHjB_RbnE3XzedqpIyqZJCGTFC"
-                alt="Bahar Retreat And Spa Logo"
+                alt="Bahar Retreat Logo"
                 className="w-full h-full object-contain"
                 referrerPolicy="no-referrer"
                 onError={(e) => {
@@ -646,7 +646,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
               Management Portal
             </h2>
             <p className="text-xs text-[#40916C] font-semibold uppercase tracking-wider">
-              Bahar Retreat And Spa • बाहर रिट्रीट एंड स्पा
+              Bahar Retreat • Operations & Admin
             </p>
           </div>
 
@@ -755,7 +755,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
               Bahar Retreat Management
             </span>
             <span className="text-[10px] text-[#D8F3DC]/80 block">
-              बाहर रिट्रीट एंड स्पा • Owner & Operations Portal
+              Owner & Operations Portal
             </span>
           </div>
         </div>
@@ -1411,7 +1411,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     <div className="flex items-center justify-between pt-2 border-t border-emerald-50">
                       <div className="flex items-center space-x-2">
                         <a
-                          href={`https://wa.me/${enq.phone.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(`Hello ${enq.name}, replying to your enquiry at Bahar Retreat And Spa.`)}`}
+                          href={`https://wa.me/${enq.phone.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(`Hello ${enq.name}, replying to your enquiry at Bahar Retreat.`)}`}
                           target="_blank"
                           rel="noreferrer"
                           className="px-3 py-1.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-xs font-semibold flex items-center space-x-1"
@@ -1655,7 +1655,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                       category: 'property',
                       imageUrl: '',
                       caption: '',
-                      altText: 'Bahar Retreat And Spa',
+                      altText: 'Bahar Retreat',
                       order: gallery.length + 1,
                     })
                   }
@@ -1764,7 +1764,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                         className="w-full p-2.5 bg-white border border-emerald-200 rounded-xl text-xs sm:text-sm font-medium focus:outline-none focus:ring-2 focus:ring-emerald-500"
                       />
                       <p className="text-[11px] text-emerald-700 mt-1">
-                        Current default: Bahar Retreat And Spa official crest.
+                        Current default: Bahar Retreat official crest.
                       </p>
                     </div>
                   </div>

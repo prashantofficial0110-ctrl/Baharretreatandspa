@@ -26,14 +26,14 @@ export const Navbar: React.FC<NavbarProps> = ({
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navLinks: { label: string; hindi: string; page: PageView }[] = [
-    { label: 'Home', hindi: 'होम', page: 'home' },
-    { label: 'About Us', hindi: 'परिचय', page: 'about' },
-    { label: 'Rooms & Villas', hindi: 'कक्ष एवं विला', page: 'rooms' },
-    { label: 'Spa & Wellness', hindi: 'स्पा एवं वेलनेस', page: 'spa' },
-    { label: 'Facilities', hindi: 'सुविधाएं', page: 'facilities' },
-    { label: 'Gallery', hindi: 'गैलरी', page: 'gallery' },
-    { label: 'Contact', hindi: 'संपर्क', page: 'contact' },
+  const navLinks: { label: string; page: PageView }[] = [
+    { label: 'Home', page: 'home' },
+    { label: 'About Us', page: 'about' },
+    { label: 'Rooms & Villas', page: 'rooms' },
+    { label: 'Spa & Wellness', page: 'spa' },
+    { label: 'Facilities', page: 'facilities' },
+    { label: 'Gallery', page: 'gallery' },
+    { label: 'Contact', page: 'contact' },
   ];
 
   const handleNavClick = (page: PageView) => {
@@ -44,7 +44,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   const handleWhatsAppClick = () => {
     const cleanPhone = (settings.whatsappNumber || '+919876543210').replace(/[^0-9]/g, '');
-    const message = encodeURIComponent(`Hello Bahar Retreat And Spa (बाहर रिट्रीट एंड स्पा), I would like to enquire about room availability and spa packages.`);
+    const message = encodeURIComponent(`Hello Bahar Retreat, I would like to enquire about room availability and spa packages.`);
     window.open(`https://wa.me/${cleanPhone}?text=${message}`, '_blank', 'noopener,noreferrer');
   };
 
@@ -61,7 +61,7 @@ export const Navbar: React.FC<NavbarProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           
-          {/* Brand Logo & Bilingual Identity */}
+          {/* Brand Logo & Identity */}
           <button
             id="nav-logo-btn"
             onClick={() => handleNavClick('home')}
@@ -70,7 +70,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white border border-[#1B4332]/15 flex items-center justify-center p-1 shadow-sm overflow-hidden group-hover:border-[#2D6A4F] group-hover:shadow-md transition duration-300 shrink-0">
               <img
                 src={settings.logoUrl || 'https://lh3.googleusercontent.com/d/1zci6HGTHjB_RbnE3XzedqpIyqZJCGTFC'}
-                alt="Bahar Retreat And Spa Official Logo"
+                alt="Bahar Retreat Official Logo"
                 className="w-full h-full object-contain transform group-hover:scale-105 transition duration-300"
                 referrerPolicy="no-referrer"
                 onError={(e) => {
@@ -80,10 +80,10 @@ export const Navbar: React.FC<NavbarProps> = ({
             </div>
             <div className="flex flex-col">
               <span className="text-xl sm:text-2xl font-serif font-bold tracking-tight text-[#1B4332] group-hover:text-[#2D6A4F] transition">
-                {settings.businessName || 'BAHAR RETREAT & SPA'}
+                {settings.businessName || 'BAHAR RETREAT'}
               </span>
-              <span className="text-[11px] sm:text-xs font-semibold text-[#40916C] tracking-widest uppercase">
-                {settings.businessNameHindi || 'बाहर रिट्रीट एंड स्पा'}
+              <span className="text-[10px] sm:text-[11px] font-semibold text-[#40916C] tracking-widest uppercase">
+                Luxury Resort & Wellness Sanctuary
               </span>
             </div>
           </button>
@@ -197,7 +197,6 @@ export const Navbar: React.FC<NavbarProps> = ({
                 >
                   <div className="flex items-center space-x-3">
                     <span>{item.label}</span>
-                    <span className="text-xs text-[#40916C] font-semibold">({item.hindi})</span>
                   </div>
                   <ChevronRight className="w-4 h-4 text-[#40916C]" />
                 </button>
@@ -215,7 +214,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               className="w-full flex items-center justify-center space-x-2 py-3 rounded-full bg-[#1B4332] hover:bg-[#2D6A4F] text-white font-bold text-xs uppercase tracking-wider shadow-md"
             >
               <Calendar className="w-4 h-4" />
-              <span>BOOK NOW / अभी बुक करें</span>
+              <span>BOOK NOW</span>
             </button>
 
             <div className="grid grid-cols-2 gap-2">

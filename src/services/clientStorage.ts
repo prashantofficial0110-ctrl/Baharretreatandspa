@@ -535,7 +535,7 @@ export const clientStorage = {
     const isPasswordValid = validPasswords.includes(password.trim());
 
     if (!isUsernameValid || !isPasswordValid) {
-      throw new Error('Invalid username or password. (Default credentials: admin / Bahar@Admin2026)');
+      throw new Error('Invalid username or password.');
     }
 
     const token = `token-${Date.now()}-${Math.random().toString(36).substring(2)}`;

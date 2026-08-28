@@ -17,7 +17,7 @@ export const FloatingActions: React.FC<FloatingActionsProps> = ({
 
   const handleWhatsAppDirect = (customMsg?: string) => {
     const text = encodeURIComponent(
-      customMsg || `Hello Bahar Retreat And Spa (बाहर रिट्रीट एंड स्पा), I would like to enquire about room bookings & spa treatments.`
+      customMsg || `Hello Bahar Retreat, I would like to enquire about room bookings & spa treatments.`
     );
     window.open(`https://wa.me/${cleanPhone}?text=${text}`, '_blank', 'noopener,noreferrer');
     setShowWhatsAppPopup(false);

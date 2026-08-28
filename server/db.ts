@@ -169,18 +169,18 @@ function ensureDataDir() {
 
 // Initial Seed Data with nature & spa aesthetics
 const defaultSettings: WebsiteSettings = {
-  businessName: 'Bahar Retreat And Spa',
-  businessNameHindi: 'बाहर रिट्रीट एंड स्पा',
+  businessName: 'Bahar Retreat',
+  businessNameHindi: '',
   tagline: 'A Serene Sanctuary of Luxury, Wellness & Untamed Nature',
-  taglineHindi: 'प्रकृति, शांति और आयुर्वेदिक विश्राम का अनुपम संगम',
-  description: 'Escape to Bahar Retreat And Spa, nestled amid tranquil nature. Experience bespoke luxury accommodations, rejuvenating Ayurvedic spa therapies, organic wellness dining, and authentic hospitality.',
+  taglineHindi: '',
+  description: 'Escape to Bahar Retreat, nestled amid tranquil nature. Experience bespoke luxury accommodations, rejuvenating Ayurvedic spa therapies, organic wellness dining, and authentic hospitality.',
   logoUrl: 'https://lh3.googleusercontent.com/d/1zci6HGTHjB_RbnE3XzedqpIyqZJCGTFC',
   phone: '+91 9854936290',
   secondaryPhone: '',
   whatsappNumber: '+919854936920',
   email: 'stay@baharretreat.com',
   address: 'Development Area,Near Pushpa Garage,Gangtok,Sikkim,India- 737101',
-  addressHindi: 'डेवलपमेंट एरिया, पुष्पा गैराज के पास, गंगटोक, सिक्किम, भारत - 737101',
+  addressHindi: '',
   googleMapsUrl: 'https://maps.google.com/?q=Development+Area+Near+Pushpa+Garage+Gangtok+Sikkim+India+737101',
   googleMapsEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14175.0!2d88.61!3d27.33!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e6a56a5805eafb%3A0x73d3248f0883b12c!2sGangtok%2C%20Sikkim%20737101!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin',
   facebookUrl: 'https://facebook.com/baharretreatandspa',
@@ -189,16 +189,16 @@ const defaultSettings: WebsiteSettings = {
   checkInTime: '14:00',
   checkOutTime: '11:00',
   currencySymbol: '₹',
-  seoTitle: 'Bahar Retreat And Spa | Luxury Resort & Wellness Sanctuary',
-  seoDescription: 'Book direct at Bahar Retreat And Spa (बाहर रिट्रीट एंड स्पा). Discover forest-view villas, holistic ayurvedic spa therapies, peaceful retreat packages, and fine dining.',
-  seoKeywords: 'Bahar Retreat And Spa, बाहर रिट्रीट एंड स्पा, luxury resort, wellness spa, ayurveda retreat, nature stay, resort booking, weekend getaway',
+  seoTitle: 'Bahar Retreat | Luxury Resort & Wellness Sanctuary',
+  seoDescription: 'Book direct at Bahar Retreat. Discover forest-view villas, holistic ayurvedic spa therapies, peaceful retreat packages, and fine dining.',
+  seoKeywords: 'Bahar Retreat, luxury resort, wellness spa, ayurveda retreat, nature stay, resort booking, weekend getaway',
 };
 
 const defaultRooms: Room[] = [
   {
     id: 'room-1',
     name: 'Bahar Royal Forest Villa',
-    hindiName: 'बाहर रॉयल फ़ॉरेस्ट विला',
+    hindiName: '',
     slug: 'royal-forest-villa',
     tagline: 'Private garden veranda with panoramic valley vistas & plunge pool',
     description: 'Immerse yourself in nature within our spacious Royal Forest Villa. Features a plush king bed, private wrap-around deck overlooking pristine greenery, open-sky rain shower, and hand-crafted teakwood finishes.',
@@ -222,7 +222,7 @@ const defaultRooms: Room[] = [
   {
     id: 'room-2',
     name: 'Serene Garden Cottage',
-    hindiName: 'सेरीन गार्डन कॉटेज',
+    hindiName: '',
     slug: 'serene-garden-cottage',
     tagline: 'Nestled amid blooming botanical flora with private patio',
     description: 'A tranquil haven surrounded by organic herb gardens and birdsong. Ideal for couples seeking restorative quietude with organic linens, artisanal bath amenities, and warm nature lighting.',
@@ -245,7 +245,7 @@ const defaultRooms: Room[] = [
   {
     id: 'room-3',
     name: 'Retreat Luxury Suite',
-    hindiName: 'रिट्रीट लग्जरी सुइट',
+    hindiName: '',
     slug: 'retreat-luxury-suite',
     tagline: 'Expansive master suite with private living lounge & sunset balcony',
     description: 'Designed for discerning travelers who appreciate understated opulence and serene landscapes. Includes a dedicated dining nook, marble bathroom with soaking tub, and oversized balcony.',
@@ -268,7 +268,7 @@ const defaultRooms: Room[] = [
   {
     id: 'room-4',
     name: 'Wellness Sanctuary Family Chalet',
-    hindiName: 'वेलनेस सैंक्चुअरी फ़ैमिली शैले',
+    hindiName: '',
     slug: 'wellness-family-chalet',
     tagline: 'Two-bedroom private sanctuary for families and wellness groups',
     description: 'A harmonious retreat with dual ensuite bedrooms, communal family lounge, private campfire clearing, and expansive picture windows welcoming the morning sun and gentle mountain breeze.',
@@ -294,7 +294,7 @@ const defaultServices: SpaService[] = [
   {
     id: 'service-2',
     name: 'Shirodhara Mind & Stress Relief',
-    hindiName: 'शिरोधरा ध्यान एवं तनाव मुक्ति',
+    hindiName: '',
     category: 'Ayurveda',
     durationMinutes: 60,
     price: 4200,
@@ -308,7 +308,7 @@ const defaultServices: SpaService[] = [
   {
     id: 'service-3',
     name: 'Bahar Signature Aroma Stone Massage',
-    hindiName: 'बाहर सिग्नेचर अरोमा स्टोन मसाज',
+    hindiName: '',
     category: 'Massage',
     durationMinutes: 90,
     price: 4800,
@@ -322,7 +322,7 @@ const defaultServices: SpaService[] = [
   {
     id: 'service-5',
     name: 'Sunrise Pranayama & Mountain Yoga',
-    hindiName: 'सूर्योदय प्राणायाम एवं योग साधना',
+    hindiName: '',
     category: 'Yoga & Meditation',
     durationMinutes: 60,
     price: 1500,
@@ -336,7 +336,7 @@ const defaultServices: SpaService[] = [
   {
     id: 'service-6',
     name: 'Himalayan Pink Salt Body Scrub & Wrap',
-    hindiName: 'हिमालयन पिंक सॉल्ट बॉडी स्क्रब',
+    hindiName: '',
     category: 'Body Rituals',
     durationMinutes: 75,
     price: 3600,
@@ -353,7 +353,7 @@ const defaultFacilities: Facility[] = [
   {
     id: 'fac-2',
     name: 'Ayurvedic Wellness Spa Center',
-    hindiName: 'आयुर्वेदिक स्पा केंद्र',
+    hindiName: '',
     iconName: 'Sparkles',
     description: 'Holistic healing sanctuary featuring steam rooms, herbal therapy suites, and private consultation.',
     image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80',
@@ -363,7 +363,7 @@ const defaultFacilities: Facility[] = [
   {
     id: 'fac-3',
     name: 'Farm-to-Table Nature Dining',
-    hindiName: 'ऑर्गेनिक रेस्तरां',
+    hindiName: '',
     iconName: 'UtensilsCrossed',
     description: 'Nutritious gourmet cuisine prepared with fresh produce harvested daily from local organic orchards.',
     image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80',
@@ -373,7 +373,7 @@ const defaultFacilities: Facility[] = [
   {
     id: 'fac-4',
     name: 'Open-Air Wooden Yoga Pavilion',
-    hindiName: 'योग एवं ध्यान मंडप',
+    hindiName: '',
     iconName: 'Sun',
     description: 'Spacious teak-decked yoga shala with 360-degree mountain views for meditation and sound baths.',
     image: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80',
@@ -383,7 +383,7 @@ const defaultFacilities: Facility[] = [
   {
     id: 'fac-5',
     name: 'Bonfire & Tracking',
-    hindiName: 'अलाव एवं ट्रैकिंग',
+    hindiName: '',
     iconName: 'Flame',
     description: 'Evening gatherings with cozy open fires, guided forest nature trails, wilderness tracking, and starlit nights.',
     image: 'https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=800&q=80',
@@ -398,8 +398,8 @@ const defaultGallery: GalleryItem[] = [
     title: 'Bahar Retreat Property Sanctuary',
     category: 'property',
     imageUrl: 'https://lh3.googleusercontent.com/d/1EetXxIQBXd3M0kytBfq34JkA8zysfCm-',
-    caption: 'Lush greenery, peaceful surroundings, and architecture of Bahar Retreat & Spa.',
-    altText: 'Bahar Retreat And Spa exterior landscape surrounded by mountains and trees',
+    caption: 'Lush greenery, peaceful surroundings, and architecture of Bahar Retreat.',
+    altText: 'Bahar Retreat exterior landscape surrounded by mountains and trees',
     order: 1,
     createdAt: new Date().toISOString(),
   },
@@ -471,7 +471,7 @@ const defaultTestimonials: Testimonial[] = [
     guestName: 'Pooja Sharma',
     guestLocation: 'Delhi, India (Google Maps Review)',
     rating: 5,
-    comment: 'A true hidden sanctuary in Gangtok! The warmth, humbleness of the staff, and calming nature vibes made our trip memorable. Loved having morning tea on the patio looking across the hills. The cozy rooms and genuine care made us feel like family. Highly recommend Bahar Retreat and Spa to everyone visiting Sikkim.',
+    comment: 'A true hidden sanctuary in Gangtok! The warmth, humbleness of the staff, and calming nature vibes made our trip memorable. Loved having morning tea on the patio looking across the hills. The cozy rooms and genuine care made us feel like family. Highly recommend Bahar Retreat to everyone visiting Sikkim.',
     stayType: 'Google Verified Stay',
     isPublished: true,
     createdAt: '2026-07-02T15:30:00Z',
@@ -655,7 +655,7 @@ class Database {
                 return {
                   ...f,
                   name: 'Bonfire & Tracking',
-                  hindiName: 'अलाव एवं ट्रैकिंग',
+                  hindiName: '',
                   description: 'Evening gatherings with cozy open fires, guided forest nature trails, wilderness tracking, and starlit nights.',
                   order: idx + 1,
                 };
@@ -685,9 +685,7 @@ class Database {
             address: (!parsed.settings?.address || parsed.settings.address.includes('Bahar Valley Road') || parsed.settings.address.includes('Uttarakhand'))
               ? 'Development Area,Near Pushpa Garage,Gangtok,Sikkim,India- 737101'
               : parsed.settings.address,
-            addressHindi: (!parsed.settings?.addressHindi || parsed.settings.addressHindi.includes('उत्तराखंड') || parsed.settings.addressHindi.includes('बाहर वैली'))
-              ? 'डेवलपमेंट एरिया, पुष्पा गैराज के पास, गंगटोक, सिक्किम, भारत - 737101'
-              : parsed.settings.addressHindi,
+            addressHindi: '',
             googleMapsUrl: (!parsed.settings?.googleMapsUrl || parsed.settings.googleMapsUrl.includes('Bahar+Retreat'))
               ? 'https://maps.google.com/?q=Development+Area+Near+Pushpa+Garage+Gangtok+Sikkim+India+737101'
               : parsed.settings.googleMapsUrl,
@@ -705,7 +703,7 @@ class Database {
     // Ensure admin user exists
     if (this.data.adminUsers.length === 0) {
       const salt = bcrypt.genSaltSync(10);
-      const hash = bcrypt.hashSync('bahar@retreat2026', salt);
+      const hash = bcrypt.hashSync('Bahar@Admin2026', salt);
       this.data.adminUsers.push({
         id: 'admin-1',
         username: 'admin',
@@ -721,7 +719,7 @@ class Database {
 
   private seedInitial() {
     const salt = bcrypt.genSaltSync(10);
-    const hash = bcrypt.hashSync('bahar@retreat2026', salt);
+    const hash = bcrypt.hashSync('Bahar@Admin2026', salt);
 
     this.data = {
       adminUsers: [

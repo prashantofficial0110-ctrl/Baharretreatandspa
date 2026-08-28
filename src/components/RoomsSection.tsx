@@ -34,8 +34,8 @@ export const RoomsSection: React.FC<RoomsSectionProps> = ({
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1B4332]">
             Rooms, Cottages & Forest Villas
           </h2>
-          <p className="font-serif text-xl sm:text-2xl text-[#40916C] font-medium">
-            शानदार और प्रकृति के निकट विश्राम स्थल
+          <p className="text-sm sm:text-base text-[#40916C] font-semibold uppercase tracking-wider">
+            Refined Living Framed by Pristine Nature
           </p>
           <p className="text-base text-[#1B4332]/75 max-w-2xl mx-auto pt-2">
             Each villa and cottage is thoughtfully crafted with natural woods, expansive private verandas, and panoramic views of untamed nature.
@@ -99,11 +99,6 @@ export const RoomsSection: React.FC<RoomsSectionProps> = ({
                       {room.name}
                     </h3>
                   </div>
-                  {room.hindiName && (
-                    <p className="text-xs font-semibold text-[#40916C] mb-2">
-                      {room.hindiName}
-                    </p>
-                  )}
                   <p className="text-sm text-[#1B4332]/75 line-clamp-2 leading-relaxed">
                     {room.tagline || room.description}
                   </p>
@@ -230,11 +225,6 @@ export const RoomsSection: React.FC<RoomsSectionProps> = ({
                   <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#1B4332]">
                     {selectedRoomModal.name}
                   </h3>
-                  {selectedRoomModal.hindiName && (
-                    <p className="text-sm font-semibold text-[#40916C]">
-                      {selectedRoomModal.hindiName}
-                    </p>
-                  )}
                 </div>
                 <div className="text-left sm:text-right">
                   <span className="font-serif text-2xl sm:text-3xl font-bold text-[#1B4332]">

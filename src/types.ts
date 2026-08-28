@@ -18,6 +18,7 @@ export interface WebsiteSettings {
   youtubeUrl: string;
   checkInTime: string;
   checkOutTime: string;
+  currency?: string;
   currencySymbol: string;
   seoTitle: string;
   seoDescription: string;
@@ -140,16 +141,19 @@ export interface AdminUser {
 export interface DashboardStats {
   totalBookings: number;
   newEnquiries: number;
-  pendingBookings: number;
+  pendingBookings?: number;
   newBookings: number;
   confirmedBookings: number;
-  completedBookings: number;
+  completedBookings?: number;
   cancelledBookings: number;
-  recentBookings: Booking[];
-  recentEnquiries: Enquiry[];
-  totalRooms: number;
-  totalServices: number;
-  totalGallery: number;
+  totalRevenue?: number;
+  pendingRevenue?: number;
+  totalEnquiries?: number;
+  recentBookings?: Booking[];
+  recentEnquiries?: Enquiry[];
+  totalRooms?: number;
+  totalServices?: number;
+  totalGallery?: number;
 }
 
 export type PageView =

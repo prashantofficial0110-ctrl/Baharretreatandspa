@@ -56,10 +56,10 @@ export const GallerySection: React.FC<GallerySectionProps> = ({ gallery }) => {
             <span>Visual Tour</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1B4332]">
-            Moments at Bahar Retreat & Spa
+            Moments at Bahar Retreat
           </h2>
-          <p className="font-serif text-xl sm:text-2xl text-[#40916C] font-medium">
-            शांत वादियों और आरामदायक पलों की झलकियां
+          <p className="text-sm sm:text-base text-[#40916C] font-semibold uppercase tracking-wider">
+            Glimpses of Tranquility & Natural Splendor
           </p>
           <p className="text-base text-[#1B4332]/75 max-w-2xl mx-auto pt-2">
             Explore glimpses of our architecture, Ayurvedic treatment spaces, lush valley vistas, and wholesome culinary experiences.

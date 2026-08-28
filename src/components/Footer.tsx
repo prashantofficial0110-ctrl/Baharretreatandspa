@@ -23,7 +23,7 @@ export const Footer: React.FC<FooterProps> = ({
 
   const handleWhatsApp = () => {
     const cleanPhone = (settings.whatsappNumber || '+919876543210').replace(/[^0-9]/g, '');
-    const msg = encodeURIComponent(`Hello Bahar Retreat And Spa, I am contacting you from the website.`);
+    const msg = encodeURIComponent(`Hello Bahar Retreat, I am contacting you from the website.`);
     window.open(`https://wa.me/${cleanPhone}?text=${msg}`, '_blank', 'noopener,noreferrer');
   };
 
@@ -34,13 +34,13 @@ export const Footer: React.FC<FooterProps> = ({
         {/* Top 4-Column Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-12 border-b border-[#40916C]/30">
           
-          {/* Col 1: Brand & Hindi Tagline */}
+          {/* Col 1: Brand & Tagline */}
           <div className="lg:col-span-4 space-y-4">
             <div className="flex items-center space-x-3">
               <div className="w-12 h-12 rounded-full bg-white border border-[#52B788]/40 flex items-center justify-center p-1 shadow-md overflow-hidden shrink-0">
                 <img
                   src={settings.logoUrl || 'https://lh3.googleusercontent.com/d/1zci6HGTHjB_RbnE3XzedqpIyqZJCGTFC'}
-                  alt="Bahar Retreat And Spa Logo"
+                  alt="Bahar Retreat Logo"
                   className="w-full h-full object-contain"
                   referrerPolicy="no-referrer"
                   onError={(e) => {
@@ -50,10 +50,10 @@ export const Footer: React.FC<FooterProps> = ({
               </div>
               <div>
                 <span className="font-serif text-2xl font-bold tracking-wider text-white block">
-                  {settings.businessName || 'BAHAR RETREAT AND SPA'}
+                  {settings.businessName || 'BAHAR RETREAT'}
                 </span>
                 <span className="text-xs text-[#D8F3DC] font-semibold block">
-                  {settings.businessNameHindi || 'बाहर रिट्रीट एंड स्पा'}
+                  {settings.tagline || 'Luxury Wellness & Ayurvedic Sanctuary'}
                 </span>
               </div>
             </div>
@@ -219,7 +219,7 @@ export const Footer: React.FC<FooterProps> = ({
         {/* Bottom Micro Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#D8F3DC]/70 gap-4">
           <div>
-            © {new Date().getFullYear()} <strong>Bahar Retreat And Spa (बाहर रिट्रीट एंड स्पा)</strong>. All rights reserved.
+            © {new Date().getFullYear()} <strong>Bahar Retreat</strong>. All rights reserved.
           </div>
 
           <div className="flex items-center space-x-4">
@@ -260,7 +260,7 @@ export const Footer: React.FC<FooterProps> = ({
             </div>
             <div className="text-xs sm:text-sm text-[#1B4332]/80 space-y-3 leading-relaxed">
               <p>
-                At Bahar Retreat And Spa, we prioritize the protection and confidentiality of our guests’ personal data.
+                At Bahar Retreat, we prioritize the protection and confidentiality of our guests’ personal data.
               </p>
               <p>
                 <strong>Information Collection:</strong> Contact details, stay dates, and preferences submitted via our booking or enquiry forms are used solely for fulfilling reservations, communication, and enhancing your retreat stay.

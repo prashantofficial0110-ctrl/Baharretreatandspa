@@ -24,8 +24,8 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ testim
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
             Words From Our Honored Guests
           </h2>
-          <p className="font-serif text-xl sm:text-2xl text-[#D8F3DC] font-medium">
-            अतिथियों के वास्तविक संस्मरण एवं अनुभव
+          <p className="text-sm sm:text-base text-[#D8F3DC] font-semibold uppercase tracking-wider">
+            Authentic Guest Experiences & Memories
           </p>
           <div className="flex items-center justify-center space-x-2 pt-2 text-[#D8F3DC] text-sm">
             <div className="flex items-center space-x-1">
@@ -89,7 +89,7 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ testim
         {/* Trust Badges Bar */}
         <div className="mt-14 text-center text-xs text-[#D8F3DC]/80 flex items-center justify-center space-x-2">
           <ShieldCheck className="w-4 h-4 text-[#52B788]" />
-          <span className="tracking-wide">Real Google Maps Reviews • Bahar Retreat And Spa, Development Area, Gangtok, Sikkim</span>
+          <span className="tracking-wide">Real Google Maps Reviews • Bahar Retreat, Development Area, Gangtok, Sikkim</span>
         </div>
 
       </div>

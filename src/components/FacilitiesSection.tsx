@@ -56,8 +56,8 @@ export const FacilitiesSection: React.FC<FacilitiesSectionProps> = ({
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
             Signature Resort Facilities
           </h2>
-          <p className="font-serif text-xl sm:text-2xl text-[#D8F3DC] font-medium">
-            अतिथि सुविधाएं एवं प्रकृति के संग जीवन
+          <p className="text-sm sm:text-base text-[#D8F3DC] font-semibold uppercase tracking-wider">
+            Curated Amenities & Holistic Mountain Living
           </p>
           <p className="text-base text-white/80 max-w-2xl mx-auto pt-2 font-normal">
             Every amenity at Bahar Retreat is designed to foster relaxation, mindfulness, and effortless living in natural tranquility.
@@ -99,12 +99,7 @@ export const FacilitiesSection: React.FC<FacilitiesSectionProps> = ({
                     <h3 className="font-serif text-xl font-bold text-white group-hover:text-[#D8F3DC] transition">
                       {facility.name}
                     </h3>
-                    {facility.hindiName && (
-                      <p className="text-xs text-[#D8F3DC]/80 font-medium mb-2">
-                        {facility.hindiName}
-                      </p>
-                    )}
-                    <p className="text-sm text-white/75 leading-relaxed">
+                    <p className="text-sm text-white/75 leading-relaxed mt-2">
                       {facility.description}
                     </p>
                   </div>
