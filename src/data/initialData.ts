@@ -333,7 +333,7 @@ export const initialGallery: GalleryItem[] = [
   {
     id: 'gal-3',
     title: 'Ayurvedic Shirodhara Suite',
-    category: 'spa',
+    category: 'property',
     imageUrl:
       'https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=1200&q=80',
     caption: 'Authentic brass oil vessel and calming herbal atmosphere.',
@@ -355,7 +355,7 @@ export const initialGallery: GalleryItem[] = [
   {
     id: 'gal-7',
     title: 'Warm Herbal Hot Stone Therapy',
-    category: 'spa',
+    category: 'property',
     imageUrl:
       'https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=1200&q=80',
     caption: 'Basalt river stones and cold-pressed botanical oils.',

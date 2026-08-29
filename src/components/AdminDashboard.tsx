@@ -2795,7 +2795,6 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                 >
                   <option value="property">Property & Views</option>
                   <option value="rooms">Rooms & Villas</option>
-                  <option value="spa">Spa & Wellness</option>
                   <option value="dining">Organic Dining</option>
                   <option value="nature">Flora & Trails</option>
                 </select>

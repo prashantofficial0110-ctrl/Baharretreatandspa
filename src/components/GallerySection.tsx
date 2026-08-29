@@ -14,7 +14,6 @@ export const GallerySection: React.FC<GallerySectionProps> = ({ gallery }) => {
     { id: 'all', label: 'All Photos' },
     { id: 'property', label: 'Property & Views' },
     { id: 'rooms', label: 'Rooms & Villas' },
-    { id: 'spa', label: 'Spa & Wellness' },
     { id: 'dining', label: 'Organic Dining' },
     { id: 'nature', label: 'Flora & Trails' },
   ];
@@ -62,7 +61,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({ gallery }) => {
             Glimpses of Tranquility & Natural Splendor
           </p>
           <p className="text-base text-[#1B4332]/75 max-w-2xl mx-auto pt-2">
-            Explore glimpses of our architecture, Ayurvedic treatment spaces, lush valley vistas, and wholesome culinary experiences.
+            Explore glimpses of our architecture, serene cottages, lush valley vistas, and wholesome culinary experiences.
           </p>
           <div className="w-16 h-0.5 bg-[#40916C] mx-auto mt-4" />
         </div>
